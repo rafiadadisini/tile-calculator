@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: Poppins, san-serif;
+  --font-roboto: Roboto, san-serif;
+  --color-warnautama: #35858e;
+  --color-warnakedua: #7da78c;
+  --color-warnaketiga: #c2d099;
+  --color-warnakeempat: #e6eec9;
+}
