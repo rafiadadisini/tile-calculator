@@ -190,27 +190,32 @@
               </div>
 
               <div class="flex justify-center gap-4">
-                <div class="text-center">
-                  <div>
-                    <label class="text-slate-700 text-sm"
-                      >Isi per box (Keping)</label
-                    >
+                <div class="w-full md:w-1/4">
+                  <div class="text-center">
+                    <label class="text-slate-700 text-sm">
+                      Isi per box (Keping)
+                    </label>
                   </div>
-                  <input
-                    class="slashed-zero w-full text-center p-1.5 text-gray-500 placeholder:text-gray-500 focus:outline-warnautama border-2 rounded-xl border-warnakedua bg-slate-200"
-                    type="number"
-                    id="perbox"
-                    placeholder="0"
-                    value="0"
-                    step="1"
-                    min="0"
-                    oninput="calc()"
-                  />
+                  <div>
+                    <input
+                      class="slashed-zero w-full text-center p-1.5 text-gray-500 placeholder:text-gray-500 focus:outline-warnautama border-2 rounded-xl border-warnakedua bg-slate-200"
+                      type="number"
+                      id="perbox"
+                      placeholder="0"
+                      value="0"
+                      step="1"
+                      min="0"
+                      oninput="calc()"
+                    />
+                  </div>
                 </div>
-                <div class="text-center">
-                  <label class="text-slate-700 text-sm"
-                    >Harga per box (Rp)</label
-                  >
+
+                <div class="w-full md:w-1/4">
+                  <div class="text-center">
+                    <label class="text-slate-700 text-sm">
+                      Harga per box (Rp)
+                    </label>
+                  </div>
                   <div class="currency-wrapper">
                     <input
                       class="currency-input slashed-zero w-full text-center p-1.5 text-gray-500 placeholder:text-gray-500 focus:outline-warnautama border-2 rounded-xl border-warnakedua bg-slate-200"
@@ -223,10 +228,12 @@
                     />
                   </div>
                 </div>
-                <div class="text-center">
-                  <label class="text-slate-700 text-sm"
-                    >Harga per m² (Rp)</label
-                  >
+                <div class="w-full md:w-1/4">
+                  <div class="text-center">
+                    <label class="text-slate-700 text-sm">
+                      Harga per m² (Rp)
+                    </label>
+                  </div>
                   <div class="currency-wrapper">
                     <input
                       class="currency-input slashed-zero w-full text-center p-1.5 text-gray-500 placeholder:text-gray-500 focus:outline-warnautama border-2 rounded-xl border-warnakedua bg-slate-200"
@@ -250,21 +257,21 @@
       <section id="actions">
         <div class="flex justify-center mt-2 mb-10">
           <div class="flex justify-between gap-4 w-1/2 p-5">
-            <div class="calc-card text-center">
-              <button
-                class="btn-reset bg-warnautama rounded-2xl text-white py-1.5 px-10 hover:bg-warnakeempat hover:text-warnautama cursor-pointer"
-                onclick="resetAll()"
-              >
-                ↺ Reset
-              </button>
-            </div>
             <div class="calc-card">
               <button
-                class="btn-reset bg-warnautama rounded-2xl text-white py-1.5 px-10 hover:bg-warnakeempat hover:text-warnautama cursor-pointer"
+                class="btn-reset bg-warnautama rounded-2xl text-white py-1.5 px-10 hover:bg-warnakeempat hover:text-warnautama cursor-pointer text-center uppercase font-bold"
+                onclick="resetAll()"
+              >
+                🗘 Reset
+              </button>
+            </div>
+            <div class="calc-card text-center uppercase">
+              <button
+                class="btn-reset bg-warnautama rounded-2xl text-white py-1.5 px-10 hover:bg-warnakeempat hover:text-warnautama cursor-pointer text-center uppercase font-bold"
                 id="btn-submit"
                 onclick="handleSubmit()"
               >
-                Hitung Kebutuhan Tile
+                🖩 Hitung
               </button>
             </div>
           </div>
@@ -285,7 +292,7 @@
         <div
           id="result-section"
           class="flex justify-center mb-16"
-          style="display: none"
+          style="display: flex"
         >
           <div class="calc-card rounded-4xl w-5/6 p-5 back bg-white shadow-xl">
             <div class="section-title text-center text-2xl">
