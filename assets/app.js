@@ -178,7 +178,7 @@ function calc() {
     ps.style.display = "block";
     document.getElementById("total-price").textContent = fmt(totalPrice);
     document.getElementById("price-calc-note").textContent =
-      `${totalBox} dus × ${fmt(priceBox)}`;
+      `${totalBox} box × ${fmt(priceBox)}`;
   } else {
     ps.style.display = "none";
   }

@@ -49,21 +49,21 @@
   </head>
 
   <!-- body -->
-  <body class="min-h-dvh flex flex-col bg-slate-100">
+  <body class="flex flex-col bg-slate-100 min-h-dvh">
     <!-- Header -->
     <header id="Header">
-      <div class="text-center w-full mt-24">
+      <div class="mt-24 w-full text-center">
         <h1
-          class="header-title text-4xl font-bold pb-1 text-warnautama uppercase font-roboto"
+          class="pb-1 font-roboto font-bold text-warnautama text-4xl uppercase header-title"
         >
           Tile Calculator
         </h1>
       </div>
       <div class="flex justify-center">
         <div
-          class="header-subtitle text-center p-2 mb-10 w-1/4 border-sky-100 rounded ba"
+          class="mb-10 p-2 border-sky-100 rounded w-1/4 text-center header-subtitle ba"
         >
-          <p class="text-slate-500 text-sm font-roboto">
+          <p class="font-roboto text-slate-500 text-sm">
             Aplikasi sederhana untuk menghitung kebutuhan tile (Keramik, Granit,
             Marmer, Batu Andesit, dll) dengan mudah dan cepat!
           </p>
@@ -74,27 +74,27 @@
     <main id="main" class="flex-1 font-roboto">
       <!-- Input Parameter -->
       <section id="parameter" class="flex justify-center">
-        <div class="grid grid-cols-2 gap-4 w-9/12 item">
+        <div class="gap-4 grid grid-cols-2 w-9/12 item">
           <!-- card area -->
           <div class="col-1">
-            <div class="calc-card rounded-2xl p-5 bg-white shadow-xl">
-              <div class="header-row text-center">
+            <div class="bg-white shadow-xl p-5 rounded-2xl calc-card">
+              <div class="text-center header-row">
                 <h3
-                  class="section-title font-bold text-2xl text-warnautama mb-3"
+                  class="mb-3 font-bold text-warnautama text-2xl section-title"
                 >
                   Area
                 </h3>
               </div>
 
               <!-- Input luas area dan waste -->
-              <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-                <div class="col-auto md:col-span-2">
+              <div class="gap-4 grid grid-cols-1 md:grid-cols-4">
+                <div class="md:col-span-2 col-auto">
                   <div class="text-center">
                     <label class="text-slate-600">Luas area (m²)</label>
                   </div>
                   <div class="text-center">
                     <input
-                      class="slashed-zero w-full text-center p-1.5 text-gray-500 placeholder:text-gray-500 focus:outline-warnautama border-2 rounded-xl border-warnakedua bg-slate-200"
+                      class="bg-slate-200 p-1.5 border-2 border-warnakedua rounded-xl focus:outline-warnautama w-full slashed-zero text-gray-500 placeholder:text-gray-500 text-center"
                       type="number"
                       id="area"
                       value="0"
@@ -105,7 +105,7 @@
                   </div>
                 </div>
 
-                <div class="col-auto md:col-span-2">
+                <div class="md:col-span-2 col-auto">
                   <div class="text-center">
                     <label class="text-slate-700"
                       >Susut / Waste Factor (%)</label
@@ -113,7 +113,7 @@
                   </div>
                   <div class="text-center">
                     <input
-                      class="slashed-zero w-full text-center p-1.5 text-gray-500 placeholder:text-gray-300 focus:outline-warnautama border-2 rounded-xl border-warnakedua bg-slate-200"
+                      class="bg-slate-200 p-1.5 border-2 border-warnakedua rounded-xl focus:outline-warnautama w-full slashed-zero text-gray-500 placeholder:text-gray-300 text-center"
                       type="number"
                       id="waste"
                       value="0"
@@ -130,24 +130,24 @@
 
           <!-- card ukuran -->
           <div class="col-2">
-            <div class="calc-card rounded-2xl p-5 bg-white shadow-xl">
-              <div class="header-row text-center">
+            <div class="bg-white shadow-xl p-5 rounded-2xl calc-card">
+              <div class="text-center header-row">
                 <h3
-                  class="section-title font-bold text-2xl text-warnautama mb-3"
+                  class="mb-3 font-bold text-warnautama text-2xl section-title"
                 >
                   Ukuran Tile
                 </h3>
               </div>
 
               <!-- Input ukuran -->
-              <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-                <div class="col-auto md:col-span-2">
+              <div class="gap-4 grid grid-cols-1 md:grid-cols-4">
+                <div class="md:col-span-2 col-auto">
                   <div class="text-center">
                     <label class="text-slate-700">Ukuran panjang (cm)</label>
                   </div>
                   <div class="text-center">
                     <input
-                      class="slashed-zero w-full text-center p-1.5 text-gray-500 placeholder:text-gray-300 focus:outline-warnautama border-2 rounded-xl border-warnakedua bg-slate-200"
+                      class="bg-slate-200 p-1.5 border-2 border-warnakedua rounded-xl focus:outline-warnautama w-full slashed-zero text-gray-500 placeholder:text-gray-300 text-center"
                       type="number"
                       id="tw"
                       value="0"
@@ -158,13 +158,13 @@
                   </div>
                 </div>
 
-                <div class="col-auto md:col-span-2">
+                <div class="md:col-span-2 col-auto">
                   <div class="text-center">
                     <label class="text-slate-700">Ukuran lebar (cm)</label>
                   </div>
                   <div class="text-center">
                     <input
-                      class="slashed-zero w-full text-center p-1.5 text-gray-500 placeholder:text-gray-300 focus:outline-warnautama border-2 rounded-xl border-warnakedua bg-slate-200"
+                      class="bg-slate-200 p-1.5 border-2 border-warnakedua rounded-xl focus:outline-warnautama w-full slashed-zero text-gray-500 placeholder:text-gray-300 text-center"
                       type="number"
                       id="th"
                       value="0"
@@ -180,10 +180,10 @@
 
           <!-- card harga -->
           <div class="col-span-2">
-            <div class="calc-card rounded-2xl p-5 back bg-white shadow-xl">
-              <div class="header-row text-center">
+            <div class="bg-white shadow-xl p-5 rounded-2xl calc-card back">
+              <div class="text-center header-row">
                 <h3
-                  class="section-title font-bold text-2xl text-warnautama mb-3"
+                  class="mb-3 font-bold text-warnautama text-2xl section-title"
                 >
                   Harga
                 </h3>
@@ -198,7 +198,7 @@
                   </div>
                   <div>
                     <input
-                      class="slashed-zero w-full text-center p-1.5 text-gray-500 placeholder:text-gray-500 focus:outline-warnautama border-2 rounded-xl border-warnakedua bg-slate-200"
+                      class="bg-slate-200 p-1.5 border-2 border-warnakedua rounded-xl focus:outline-warnautama w-full slashed-zero text-gray-500 placeholder:text-gray-500 text-center"
                       type="number"
                       id="perbox"
                       placeholder="0"
@@ -218,7 +218,7 @@
                   </div>
                   <div class="currency-wrapper">
                     <input
-                      class="currency-input slashed-zero w-full text-center p-1.5 text-gray-500 placeholder:text-gray-500 focus:outline-warnautama border-2 rounded-xl border-warnakedua bg-slate-200"
+                      class="bg-slate-200 p-1.5 border-2 border-warnakedua rounded-xl focus:outline-warnautama w-full slashed-zero text-gray-500 placeholder:text-gray-500 text-center currency-input"
                       type="text"
                       id="price-box"
                       placeholder="0"
@@ -236,7 +236,7 @@
                   </div>
                   <div class="currency-wrapper">
                     <input
-                      class="currency-input slashed-zero w-full text-center p-1.5 text-gray-500 placeholder:text-gray-500 focus:outline-warnautama border-2 rounded-xl border-warnakedua bg-slate-200"
+                      class="bg-slate-200 p-1.5 border-2 border-warnakedua rounded-xl focus:outline-warnautama w-full slashed-zero text-gray-500 placeholder:text-gray-500 text-center currency-input"
                       type="text"
                       id="price-m2"
                       placeholder="0"
@@ -256,18 +256,18 @@
       <!-- Action Buttons -->
       <section id="actions">
         <div class="flex justify-center mt-2 mb-10">
-          <div class="flex justify-between gap-4 w-1/2 p-5">
+          <div class="flex justify-between gap-4 p-5 w-1/2">
             <div class="calc-card">
               <button
-                class="btn-reset bg-warnautama rounded-2xl text-white py-1.5 px-10 hover:bg-warnakeempat hover:text-warnautama cursor-pointer text-center uppercase font-bold"
+                class="bg-warnautama hover:bg-warnakeempat px-10 py-1.5 rounded-2xl font-bold text-white hover:text-warnautama text-center uppercase cursor-pointer btn-reset"
                 onclick="resetAll()"
               >
                 🗘 Reset
               </button>
             </div>
-            <div class="calc-card text-center uppercase">
+            <div class="text-center uppercase calc-card">
               <button
-                class="btn-reset bg-warnautama rounded-2xl text-white py-1.5 px-10 hover:bg-warnakeempat hover:text-warnautama cursor-pointer text-center uppercase font-bold"
+                class="bg-warnautama hover:bg-warnakeempat px-10 py-1.5 rounded-2xl font-bold text-white hover:text-warnautama text-center uppercase cursor-pointer btn-reset"
                 id="btn-submit"
                 onclick="handleSubmit()"
               >
@@ -278,10 +278,10 @@
         </div>
 
         <div
-          class="text-center text-sm text-red-600 mt-2 mb-5 flex justify-center"
+          class="flex justify-center mt-2 mb-5 text-red-600 text-sm text-center"
         >
           <p
-            class="error-msg p-2 rounded-3xl w-1/2 font-light"
+            class="p-2 rounded-3xl w-1/2 font-light error-msg"
             id="error-msg"
           ></p>
         </div>
@@ -294,109 +294,109 @@
           class="flex justify-center mb-16"
           style="display: flex"
         >
-          <div class="calc-card rounded-4xl w-5/6 p-5 back bg-white shadow-xl">
-            <div class="section-title text-center text-2xl">
+          <div class="bg-white shadow-xl p-5 rounded-4xl w-5/6 calc-card back">
+            <div class="text-2xl text-center section-title">
               <h2
-                class="border-b-2 border-warnautama mb-5 font-bold text-warnautama"
+                class="mb-5 border-warnautama border-b-2 font-bold text-warnautama"
               >
                 HASIL PERHITUNGAN
               </h2>
             </div>
 
             <!-- card hasil -->
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div class="gap-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
               <div
-                class="col-auto bg-warnakeempat rounded-xl shadow-xl border-4 border-white"
+                class="bg-warnakeempat shadow-xl border-4 border-white rounded-xl col-auto"
               >
-                <div class="metric text-center">
+                <div class="text-center metric">
                   <div
-                    class="metric-label text-white bg-warnautama font-bold rounded-t w-full bg-color-pertama p-2.5"
+                    class="bg-color-pertama bg-warnautama p-2.5 rounded-t w-full font-bold text-white metric-label"
                   >
                     <label class="uppercase"> Luas + Waste </label>
                   </div>
                   <p
-                    class="metric-value text-center pt-5 text-3xl text-warnautama slashed-zero"
+                    class="pt-5 slashed-zero text-warnautama text-3xl text-center metric-value"
                     id="total-area"
                   >
                     0
                   </p>
-                  <p class="metric-sub text-slate-600 pb-5">m²</p>
+                  <p class="pb-5 text-slate-600 metric-sub">m²</p>
                 </div>
               </div>
 
               <div
-                class="col-auto bg-warnakeempat rounded-xl shadow-xl border-4 border-white"
+                class="bg-warnakeempat shadow-xl border-4 border-white rounded-xl col-auto"
               >
-                <div class="metric text-center">
+                <div class="text-center metric">
                   <div
-                    class="metric-label text-white bg-warnautama font-bold rounded-t w-full bg-color-pertama p-2.5"
+                    class="bg-color-pertama bg-warnautama p-2.5 rounded-t w-full font-bold text-white metric-label"
                   >
                     <label class="uppercase"> Total Kebutuhan </label>
                   </div>
                   <p
-                    class="metric-value text-center pt-5 text-3xl text-warnautama slashed-zero"
+                    class="pt-5 slashed-zero text-warnautama text-3xl text-center metric-value"
                     id="total-tiles"
                   >
                     0
                   </p>
-                  <p class="metric-sub text-slate-600 pb-5">Keping</p>
+                  <p class="pb-5 text-slate-600 metric-sub">Keping</p>
                 </div>
               </div>
 
               <div
-                class="col-auto bg-warnakeempat rounded-xl shadow-xl border-4 border-white"
+                class="bg-warnakeempat shadow-xl border-4 border-white rounded-xl col-auto"
               >
-                <div class="metric text-center">
+                <div class="text-center metric">
                   <div
-                    class="metric-label text-white bg-warnautama font-bold rounded-t w-full bg-color-pertama p-2.5"
+                    class="bg-color-pertama bg-warnautama p-2.5 rounded-t w-full font-bold text-white metric-label"
                   >
                     <label class="uppercase"> Total Box </label>
                   </div>
                   <p
-                    class="metric-value text-center pt-5 text-3xl text-warnautama slashed-zero"
+                    class="pt-5 slashed-zero text-warnautama text-3xl text-center metric-value"
                     id="total-box"
                   >
                     0
                   </p>
-                  <p class="metric-sub text-slate-600 pb-5">Box</p>
+                  <p class="pb-5 text-slate-600 metric-sub">Box</p>
                 </div>
               </div>
 
               <div
-                class="col-auto bg-warnakeempat rounded-xl shadow-xl border-4 border-white"
+                class="bg-warnakeempat shadow-xl border-4 border-white rounded-xl col-auto"
               >
-                <div class="metric text-center">
+                <div class="text-center metric">
                   <div
-                    class="metric-label text-white bg-warnautama font-bold rounded-t w-full bg-color-pertama p-2.5"
+                    class="bg-color-pertama bg-warnautama p-2.5 rounded-t w-full font-bold text-white metric-label"
                   >
                     <label class="uppercase"> Total keping dibeli </label>
                   </div>
                   <p
-                    class="metric-value text-center pt-5 text-3xl text-warnautama slashed-zero"
+                    class="pt-5 slashed-zero text-warnautama text-3xl text-center metric-value"
                     id="total-in-box"
                   >
                     0
                   </p>
-                  <p class="metric-sub text-slate-600 pb-5">Keping</p>
+                  <p class="pb-5 text-slate-600 metric-sub">Keping</p>
                 </div>
               </div>
 
               <div
-                class="col-auto bg-warnakeempat rounded-xl shadow-xl border-4 border-white"
+                class="bg-warnakeempat shadow-xl border-4 border-white rounded-xl col-auto"
               >
-                <div class="metric text-center">
+                <div class="text-center metric">
                   <div
-                    class="metric-label text-white bg-warnautama font-bold rounded-t w-full bg-color-pertama p-2.5"
+                    class="bg-color-pertama bg-warnautama p-2.5 rounded-t w-full font-bold text-white metric-label"
                   >
                     <label class="uppercase"> Sisa </label>
                   </div>
                   <p
-                    class="metric-value text-center pt-5 text-3xl text-warnautama slashed-zero"
+                    class="pt-5 slashed-zero text-warnautama text-3xl text-center metric-value"
                     id="leftover-tiles"
                   >
                     0
                   </p>
-                  <p class="metric-sub text-slate-600 pb-5" id="leftover-area">
+                  <p class="pb-5 text-slate-600 metric-sub" id="leftover-area">
                     —
                   </p>
                 </div>
@@ -405,26 +405,26 @@
             <!-- end card hasil -->
 
             <!-- hasil detail -->
-            <div id="detail-rows" class="mt-10 p-5 rounded-2xl bg-slate-100">
+            <div id="detail-rows" class="bg-slate-100 mt-10 p-5 rounded-2xl">
               <div
-                class="row grid grid-cols-2 border-b-2 pt-3 border-warnautama"
+                class="grid grid-cols-2 pt-3 border-warnautama border-b-2 row"
               >
                 <span
-                  class="row-label text-left uppercase text-warnakedua font-bold"
+                  class="font-bold text-warnakedua text-left uppercase row-label"
                   >label</span
                 >
-                <span class="row-value text-right text-warnautama">value</span>
+                <span class="text-warnautama text-right row-value">value</span>
               </div>
             </div>
 
             <!-- total harga -->
             <div id="price-section" style="display: none">
-              <div class="rounded-md p-0.5 mt-5">
+              <div class="mt-5 p-0.5 rounded-md">
                 <div
-                  class="price-highlight border-y-2 border-warnautama flex justify-between py-2 m-3"
+                  class="flex justify-between m-3 py-2 border-warnautama border-y-2 price-highlight"
                 >
-                  <div class="text-left items-center">
-                    <p class="text-warnautama font-bold">
+                  <div class="items-center text-left">
+                    <p class="font-bold text-warnautama uppercase">
                       Total biaya material
                     </p>
                     <p id="price-calc-note" class="text-warnakedua">—</p>
@@ -432,7 +432,7 @@
                   <div class="items-center">
                     <p
                       id="total-price"
-                      class="text-right text-3xl text-warnautama font-bold pt-2"
+                      class="pt-2 font-bold text-warnautama text-3xl text-right"
                     >
                       —
                     </p>
