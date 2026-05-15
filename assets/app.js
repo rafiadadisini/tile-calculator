@@ -150,7 +150,7 @@ function calc() {
     Jumlah keping tile yang dibutuhkan 
     </span>
     <span class="row-value text-right text-warnautama">
-    ${totalTiles} pcs
+    ${totalTiles} keping
     </span>
     </div>
     
@@ -159,7 +159,7 @@ function calc() {
     Hitungan per box yang dibutuhkan (${totalTiles} ÷ ${perbox} keping/box)
     </span>
     <span class="row-value text-right text-warnautama">
-    ${totalBox} box → ${totalInBox} pcs
+    ${totalBox} box → ${totalInBox} keping
     </span>
     </div>
     
